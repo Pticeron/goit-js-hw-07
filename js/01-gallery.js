@@ -31,9 +31,9 @@ function creatGalleryMarkup(galleryItems) {
     alt="${description}"
     />
 </a>
-</div>`;
-    })
-    .join();
+</div>
+`;
+}).join(``);
 
   console.log(markup);
 }
@@ -59,3 +59,22 @@ gallery.addEventListener('click', e => {
 		}
 	})
 })
+
+// const close = function(selectedImage, next) {
+
+// 	selectedImage.classList.remove('basicLightbox--visible')
+
+// 	setTimeout(() => {
+
+// 		// Don't continue to remove lightbox when element missing
+// 		if (visible(selectedImage) === false) return next()
+
+// 		elem.parentElement.removeChild(selectedImage)
+
+// 		return next()
+
+// 	}, 410)
+
+// 	return true
+
+// }
